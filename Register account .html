@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Account</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+input, select {
+    width: calc(100% - 160px);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-left: 5px;
+    display: block;
+}
+</style>
+<body>
+
+    <h2>Register Account</h2>
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+        <span class="error">User name must be at least 4 characters</span><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+        <span class="error">Password must be at least 4 characters</span><br>
+
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password">
+        <span class="error">Passwords do not match</span><br>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+        <span class="error">Invalid email format</span><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone">
+        <span class="error">Invalid phone number</span><br>
+
+        <label for="zipcode">Zip Code:</label>
+        <input type="text" id="zipcode" name="zipcode">
+        <span class="error">Invalid Zip Code</span><br>
+
+        <label for="card_type">Card Type:</label>
+        <select id="card_type" name="card_type">
+            <option value="visa">Visa</option>
+            <option value="mastercard">MasterCard</option>
+        </select><br>
+
+        <label for="card_number">Card Number:</label>
+        <input type="text" id="card_number" name="card_number">
+        <span class="error">Invalid card number format</span><br>
+
+        <label for="expiration_date">Expiration Date:</label>
+        <input type="text" id="expiration_date" name="expiration_date">
+        <span class="error">Invalid date format</span><br>
+
+        <button type="submit">Register</button>
+        <button type="reset">Clear Form</button>
+    </form>
+
+</body>
+</html>
