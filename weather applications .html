@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #8b91c9;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 1.8em;
+  text-decoration:underline;
+}
+
+.search-box {
+    margin: 20px 0;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 60%;
+    border: none;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4f4ba5;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.weather-info {
+    margin: 20px 0;
+}
+
+.weather-info h2 {
+    font-size: 2em;
+}
+
+.temperature {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.day {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.day img {
+    width: 30px;
+    height: 30px;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+</style>
+<body>
+    <div class="container">
+        <h1>Welcome to our Weather application</h1>
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name">
+            <button>SEARCH</button>
+        </div>
+        <div class="weather-info">
+            <h2>Paris</h2>
+            <div class="temperature">
+                <span>12</span>&deg;C
+            </div>
+            <p>Tuesday 14:40, scattered clouds</p>
+            <p>Humidity: 66%, Wind Speed: 4.3 m/s</p>
+        </div>
+        <div class="forecast">
+            <div class="day">
+                <p>Mon</p>
+                <img src="cloud.png" alt="cloudy">
+                <p>15&deg; - 19&deg;</p>
+            </div>
+            <div class="day">
+                <p>Tue</p>
+                <img src="cloud.png" alt="cloudy">
+                <p>15&deg; - 19&deg;</p>
+            </div>
+            <div class="day">
+                <p>Wed</p>
+                <img src="cloud.png" alt="cloudy">
+                <p>15&deg; - 19&deg;</p>
+            </div>
+            <div class="day">
+                <p>Thu</p>
+                <img src="cloud.png" alt="cloudy">
+                <p>15&deg; - 19&deg;</p>
+            </div>
+            <div class="day">
+                <p>Fri</p>
+                <img src="cloud.png" alt="cloudy">
+                <p>15&deg; - 19&deg;</p>
+            </div>
+            <div class="day">
+                <p>Sat</p>
+                <img src="cloud.png" alt="cloudy">
+                <p>15&deg; - 19&deg;</p>
+            </div>
+            <div class="day">
+                <p>Sun</p>
+                <img src="cloud.png" alt="cloudy">
+                <p>15&deg; - 19&deg;</p>
+            </div>
+        </div>
+        <footer>
+            <p> Coded by <a href="#">Rennish Mboya</a> and is on <a href="#">GitHub</a> and hosted by <a href="#">Netlify</a>. The design was done using Figma.</p>
+        </footer>
+    </div>
+</body>
+</html>
